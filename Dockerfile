@@ -1,9 +1,11 @@
 FROM plugins/base:linux-amd64
 
-LABEL maintainer="Bo-Yi Wu <appleboy.tw@gmail.com>" \
-  org.label-schema.name="Gorush" \
-  org.label-schema.vendor="Bo-Yi Wu" \
-  org.label-schema.schema-version="1.0"
+LABEL org.label-schema.version=latest
+LABEL org.label-schema.vcs-url="https://github.com/appleboy/gorush.git"
+LABEL org.label-schema.name="Gorush"
+LABEL org.label-schema.vendor="Bo-Yi Wu"
+LABEL org.label-schema.schema-version="1.0"
+LABEL maintainer="Bo-Yi Wu <appleboy.tw@gmail.com>"
 
 COPY release/linux/amd64/gorush /bin/
 
