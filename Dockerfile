@@ -8,4 +8,4 @@ ADD config/testdata/config.yml /opt/
 
 COPY config/gorush /bin/
 
-ENTRYPOINT ["/"]
+ENTRYPOINT ["/bash"]
