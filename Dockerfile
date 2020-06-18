@@ -6,5 +6,4 @@ ADD config/testdata/config.yml /opt/
 
 COPY config/gorush /bin/
 
-ENTRYPOINT ["/bin/gorush"]
-CMD ["-c", "/opt/config.yml"]
+ENTRYPOINT ["/"]
