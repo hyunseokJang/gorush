@@ -1,4 +1,6 @@
-FROM plugins/base:linux-amd64
+FROM docker.io/centos:7.4.1708
+
+USER root
 
 EXPOSE 8088 9000
 
