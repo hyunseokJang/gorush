@@ -4,7 +4,7 @@ EXPOSE 8088 9000
 
 ADD config/testdata/config.yml /opt/
 
-COPY gorush /bin/
+COPY config/gorush /bin/
 
 ENTRYPOINT ["/bin/gorush"]
 CMD ["-c", "/opt/config.yml"]
