@@ -1,9 +1,10 @@
 FROM plugins/base:linux-amd64
 
-EXPOSE 8088
+EXPOSE 8088 9000
 
-ADD config/testdata/config.yml /
-ADD bin/gorush /
+ADD config/testdata/config.yml /opt/
 
-ENTRYPOINT ["/gorush"]
-CMD ["-c", "config.yml"]
+COPY release/linux/arm64/gorush /bin/
+
+ENTRYPOINT ["/bin/gorush"]
+CMD ["-c", "/opt/config.yml"]
